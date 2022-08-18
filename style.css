@@ -1,0 +1,343 @@
+/*IMPORTANDO FONT DO GOOGLE FONTS POR CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/*RESET CONFIGURAÇÕES DE MARGIN E PADDIN DA PAGINA*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*CONFIGURANDO O BODY/PAG PARA TER A MESMA FONTE*/
+body {
+    font-family: 'poppins';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*CONFIGURAÇÃO TAMANHO, COR E POSIÇÃO DO HEADER*/
+.main-header {
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+    background: linear-gradient(45deg, #3016a5fb, #8e2de2);
+    text-align: center;
+    position: fixed;
+    display: block;
+    z-index: 1;
+
+}
+
+/*CONFIGURANDO UL=.MENU PARA SER UMA LISTA SEM FORMATO*/
+.menu {
+    list-style: none;
+
+}
+
+/*FORMATANDO POSIÇÕES, CORES E TRANSIÇÕES DO CONTEUDO DA UL*/
+.menu a {
+    position: relative;
+    display: inline-block;
+    margin: 1.25rem 2.25rem;
+    transition: all ease-in-out .5s;
+    color: white;
+    text-decoration: none;
+}
+
+/*EFEITOS AO PASSAR MOUSE EM CIMA DOS LINKS=A*/
+.menu:hover a {
+    opacity: .2;
+    filter: blur(0.0625rem);
+}
+
+.menu a:hover {
+    opacity: 1;
+    filter: blur(0);
+}
+
+/*IMAGEM NA LATERAL DA PAGINA, POSIÇÃO, TAMANHO E ETC*/
+.aside {
+    width: 25%;
+    height: 100%;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: fixed;
+    background-image: url(./img/header-img.png);
+    display: flex;
+    align-items: center;
+
+}
+
+/*LOGO CENTRO DO ASIDE RESPONSIVO*/
+.img-aside {
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+    margin: auto;
+    transition: ease-in-out 0.7s;
+
+}
+
+.img-aside:hover {
+    width: 11rem;
+    height: 11rem;
+    transition: ease-in-out 0.5s;
+
+}
+
+/*CONTEUDO DA PAGINA*/
+.intro {
+    width: 74%;
+    margin-top: 25vh;
+    position: absolute;
+    right: 0;
+    margin-right: 7px;
+
+}
+
+.intro h1 {
+    text-align: center;
+    padding-bottom: 10vh;
+    font-size: 2em;
+    text-decoration: overline underline;
+    letter-spacing: 10px;
+    text-underline-offset: 0.4rem;
+}
+
+.intro p {
+    text-align: center;
+    padding: 0 4vw 0 4vw;
+    font-size: 1.4rem;
+}
+
+.intro h2 {
+    text-align: center;
+    margin-top: 40vh;
+    padding-bottom: 10vh;
+    font-size: 2em;
+    text-decoration: overline underline;
+    letter-spacing: 10px;
+    text-underline-offset: 0.4rem;
+}
+
+/*Conteudo Pagina principal HTML*/
+.ling {
+    display: flex;
+
+}
+
+.ling img {
+
+    position: relative;
+    height: 30vh;
+    width: 22vw;
+    margin-top: 5vh;
+
+}
+
+.ling p {
+
+    margin-top: 12vh;
+    display: inline;
+    font-size: 1em;
+    text-align: center;
+}
+
+/*Conteudo Pagina principal CSS*/
+.ling2 {
+    display: flex;
+    margin-top: 12vh;
+
+}
+
+.ling2 img {
+    flex-flow: left;
+    height: 30vh;
+    width: 22vw;
+    margin-top: 5vh;
+
+
+}
+
+.ling2 p {
+
+    margin-top: 12vh;
+    display: inline;
+    font-size: 1em;
+    text-align: center;
+}
+
+/*Conteudo Pagina principal JAVASCRIPT*/
+.ling3 {
+    display: flex;
+    margin-top: 12vh;
+    padding-bottom: 10vh;
+
+}
+
+.ling3 img {
+    margin-left: 5vh;
+    position: relative;
+    height: 30vh;
+    width: 22vw;
+    margin-top: 5vh;
+
+}
+
+.ling3 p {
+
+    margin-top: 12vh;
+    display: inline;
+    font-size: 1em;
+    text-align: center;
+
+}
+
+/*RESPONSIVIDADE*/
+@media screen and (min-width:800px) {
+    .main-header {
+        width: 75%;
+        right: 0;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    .main-header {
+        position: absolute;
+        box-shadow: 0 10px 10px gray;
+    }
+
+    .menu {
+        position: relative;
+    }
+
+    .menu a {
+        display: list-item;
+    }
+
+    .menu li {
+        border-bottom: rgba(255, 255, 255, 0.1) solid;
+        font-size: 0.8rem;
+
+    }
+
+    .menu:hover a {
+        opacity: .2;
+        filter: blur(0.0625rem);
+    }
+
+    .menu a:hover {
+        opacity: 1;
+        filter: blur(0);
+    }
+
+    .aside {
+        position: absolute;
+        width: 100%;
+        height: 25rem;
+        margin-top: 12.5rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center right;
+        box-shadow: 10px 0 15px gray;
+
+    }
+
+    .img-aside:hover {
+        width: 11rem;
+        height: 11rem;
+        transition: ease-in-out 0.5s;
+    }
+
+
+    .intro {
+        width: 99%;
+        position: absolute;
+        margin: 37rem 0 0 0;
+        padding-top: 5vh;
+
+    }
+
+    .intro h1 {
+        letter-spacing: 0;
+        font-size: 1.8rem;
+    }
+
+    #LinH2 {
+
+        text-align: center;
+        margin-top: 14vh;
+        padding-bottom: 10vh;
+        font-size: 1.8em;
+        text-decoration: overline underline;
+        letter-spacing: 0;
+        text-underline-offset: 0.4rem;
+    }
+
+
+    .intro p {
+        padding: 0vh 3vw 0 3vw;
+        font-size: 1rem;
+    }
+
+    .ling {
+        display: flex;
+    }
+
+    .ling img {
+
+        position: relative;
+        height: 12vh;
+        width: 20vw;
+        margin-top: 5vh;
+
+    }
+
+    .ling p {
+
+        margin-top: 4vh;
+        display: inline;
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    .ling2 img {
+
+        position: relative;
+        height: 13vh;
+        width: 21vw;
+        margin-top: 6vh;
+
+    }
+
+    .ling2 p {
+
+        margin-top: 6vh;
+        display: inline;
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    .ling3 img {
+
+        position: relative;
+        height: 12vh;
+        width: 20vw;
+        margin-top: 5vh;
+
+    }
+
+    .ling3 p {
+
+        margin-top: 4vh;
+        display: inline;
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+}

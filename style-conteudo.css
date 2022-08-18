@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/*FORMATAÇÃO DA PAGINA*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*FORMATAÇÃO CORPO DA PAGINA, COR DE FUNDO E FONTE*/
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+    margin-top: 2vh;
+    font-family: 'Poppins';
+
+}
+
+/*TAMANHO DA PARTE DO CONTEUDO DA PAGINA, TAMANHO DA FONTE*/
+.div-main {
+    width: 120vh;
+    height: 100%;
+    background-color: white;
+    position: relative;
+
+}
+
+.div-main h1 {
+    text-align: center;
+    margin-bottom: 8vh;
+    padding-top: 2vh;
+}
+
+.div-main p {
+    text-align: center;
+    font-size: 1.3rem;
+    padding-bottom: 2vw;
+    border-bottom: #4a00e0 solid 2px;
+
+}
+
+/*TAMANHO DA PARTE DO CONTEUDO DA PAGINA, TAMANHO DA FONTE*/
+
+/*LISTAS*/
+.conteudo ul {
+    margin-top: 20px;
+    position: relative;
+    padding-left: 2vw;
+    list-style: none;
+}
+
+/*LISTA DE SITES*/
+
+.opcoes h2 {
+    font-size: 1.8rem;
+    padding-left: 3vh;
+}
+
+.sites li {
+    padding-top: 3vh;
+
+}
+
+.sites {
+    margin-bottom: 8VH;
+}
+
+.sites a {
+    text-decoration: none;
+    color: #8e2de2;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/*LISTA DE SITES*/
+
+/*LISTA DE FERRAMENTAS*/
+.opcoes2 {
+    margin-top: 3vh;
+}
+
+.opcoes2 h2 {
+    font-size: 1.8rem;
+    padding-left: 3vh;
+}
+
+.ferramentas li {
+    padding-top: 3vh;
+}
+
+.ferramentas {
+    margin-bottom: 5VH;
+}
+
+.ferramentas a {
+    text-decoration: none;
+    color: #8e2de2;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/*LISTA DE FERRAMENTAS*/
+
+/*LISTA DE VIDEO AULAS*/
+.opcoes3 {
+    margin-top: 3vh;
+}
+
+.opcoes3 h2 {
+    font-size: 1.8rem;
+    padding-left: 3vh;
+}
+
+.aulas li {
+    padding-top: 3vh;
+}
+
+.aulas {
+    margin-bottom: 5VH;
+    padding-bottom: 2vh;
+}
+
+.aulas a {
+    text-decoration: none;
+    color: #8e2de2;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+}

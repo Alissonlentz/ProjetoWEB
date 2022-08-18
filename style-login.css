@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+    background-repeat: no-repeat;
+}
+
+.Login-main {
+    text-align: center;
+    padding: 2rem;
+    min-width: 400px;
+    min-height: 40vh;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.Login-main h1 {
+    padding-bottom: 2rem;
+    font-size: 1.6rem;
+}
+
+.Login-main input {
+    padding: 1rem;
+    display: relative;
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-bottom: 1vh;
+
+}
+
+.Login-main legend {
+    text-align: left;
+    padding-bottom: 1vh;
+}
+
+.buttom {
+    margin-top: 3vh;
+    padding-bottom: 2vh;
+}
+
+.cadastro {
+    color: black;
+    font-size: 1.6rem;
+}
+
+.voltar {
+
+    color: black;
+
+}
+
+@media screen and (max-width:600px) {
+    .Login-main {
+        text-align: center;
+        padding: 1rem;
+        min-width: 300px;
+        min-height: 30vh;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .Login-main h1 {
+        padding-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .Login-main input {
+        padding: 0.5rem;
+        display: relative;
+        width: 100%;
+        border: 2px solid rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        margin-bottom: 1vh;
+
+    }
+
+    .Login-main legend {
+        text-align: left;
+        padding-bottom: 1vh;
+    }
+
+    .buttom {
+        margin-top: 1.5vh;
+        padding-bottom: 1vh;
+    }
+
+    .cadastro {
+        color: black;
+        font-size: 1.2rem;
+    }
+
+}

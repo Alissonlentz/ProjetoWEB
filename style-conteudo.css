@@ -27,6 +27,14 @@ body {
 
 }
 
+.voltar  {
+    text-decoration: none;
+    background-color: aqua;
+    font-size: 20px;
+    padding:  10px;
+    position: relative;
+}
+
 .div-main h1 {
     text-align: center;
     margin-bottom: 8vh;
@@ -127,5 +135,120 @@ body {
     color: #8e2de2;
     font-size: 1.2rem;
     font-weight: 500;
+
+}
+
+@media screen and (max-width:800px) { 
+    .div-main {
+        width: 55vh;
+        height: 90%;
+        background-color: white;
+        position: relative;
+    
+    }
+    
+    .div-main h1 {
+        text-align: center;
+        margin-bottom: 4vh;
+        padding-top: 2vh;
+        font-size: 1.6rem;
+    }
+    
+    .div-main p {
+        text-align: center;
+        font-size: 0.9rem;
+        padding-bottom: 2vw;
+        border-bottom: #4a00e0 solid 2px;
+    
+    }
+    
+    /*TAMANHO DA PARTE DO CONTEUDO DA PAGINA, TAMANHO DA FONTE*/
+    
+    /*LISTAS*/
+    .conteudo ul {
+        margin-top: 20px;
+        position: relative;
+        padding-left: 2vw;
+        list-style: none;
+    }
+    
+    /*LISTA DE SITES*/
+    
+    .opcoes h2 {
+        font-size: 1.6rem;
+        padding-left: 3vh;
+    }
+    
+    .sites li {
+        padding-top: 3vh;
+    
+    }
+    
+    .sites {
+        margin-bottom: 8VH;
+    }
+    
+    .sites a {
+        text-decoration: none;
+        color: #8e2de2;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    
+    /*LISTA DE SITES*/
+    
+    /*LISTA DE FERRAMENTAS*/
+    .opcoes2 {
+        margin-top: 3vh;
+    }
+    
+    .opcoes2 h2 {
+        font-size: 1.6rem;
+        padding-left: 3vh;
+    }
+    
+    .ferramentas li {
+        padding-top: 3vh;
+    }
+    
+    .ferramentas {
+        margin-bottom: 5VH;
+    }
+    
+    .ferramentas a {
+        text-decoration: none;
+        color: #8e2de2;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    
+    /*LISTA DE FERRAMENTAS*/
+    
+    /*LISTA DE VIDEO AULAS*/
+    .opcoes3 {
+        margin-top: 3vh;
+    }
+    
+    .opcoes3 h2 {
+        font-size: 1.6rem;
+        padding-left: 3vh;
+    }
+    
+    .aulas li {
+        padding-top: 3vh;
+    }
+    
+    .aulas {
+        margin-bottom: 5VH;
+        padding-bottom: 2vh;
+    }
+    
+    .aulas a {
+        text-decoration: none;
+        color: #8e2de2;
+        font-size: 0.9rem;
+        font-weight: 500;
+    
+    }
 
 }

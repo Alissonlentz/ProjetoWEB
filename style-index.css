@@ -36,6 +36,12 @@ html {
 
 }
 
+.menu .usu {
+    position: relative;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
 /*FORMATANDO POSIÇÕES, CORES E TRANSIÇÕES DO CONTEUDO DA UL*/
 .menu a {
     position: relative;
@@ -45,6 +51,8 @@ html {
     color: white;
     text-decoration: none;
 }
+
+
 
 /*EFEITOS AO PASSAR MOUSE EM CIMA DOS LINKS=A*/
 .menu:hover a {
@@ -210,6 +218,13 @@ html {
     .main-header {
         position: absolute;
         box-shadow: 0 10px 10px gray;
+    }
+
+
+    .menu .usu {
+        position: relative;
+        font-size: 0.4rem;
+        text-align: center;
     }
 
     .menu {
